@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'fullstack-crud-frontend';
+  title = 'CRUD in framework go Brrrllll';
 }
