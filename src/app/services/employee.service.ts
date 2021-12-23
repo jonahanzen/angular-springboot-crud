@@ -19,4 +19,8 @@ export class EmployeeService {
 return this.httpClient.post(`${this.baseURL}`, employee);
   }
 
+  getEmployeeById(id: number) : Observable<Employee> {
+return this.httpClient.get<Employee>(`${this.baseURL}/${id}`)
+  }
+
 }
