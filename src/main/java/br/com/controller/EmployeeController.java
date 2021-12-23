@@ -22,4 +22,9 @@ public class EmployeeController {
         return repository.findAll();
     }
 
+    @PostMapping("/employees")
+    public Employee createEmployee(@RequestBody Employee employee) {
+        return repository.save(employee);
+    }
+
 }
