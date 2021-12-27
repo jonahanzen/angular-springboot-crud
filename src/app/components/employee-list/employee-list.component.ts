@@ -34,4 +34,8 @@ this.employeeService.deleteEmployee(id).subscribe( data => {
 })
   }
 
+  employeeDetails(id: number) {
+    this.router.navigate(['employee-details', id])
+  }
+
 }
