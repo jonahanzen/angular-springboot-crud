@@ -28,4 +28,10 @@ this.employeeService.getEmployeesList().subscribe( data => {
 this.router.navigate(['update-employee', id])
   }
 
+  deleteEmployee(id: number) {
+this.employeeService.deleteEmployee(id).subscribe( data => {
+  this.getEmployees()
+})
+  }
+
 }
